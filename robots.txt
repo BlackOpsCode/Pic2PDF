@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pic2pdf.runtime-hub.com/sitemap.xml

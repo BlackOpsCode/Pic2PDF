@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PNG to PDF Converter – Screenshots &amp; Graphics | Pic2PDF</title>
+  <meta name="description" content="Convert PNG screenshots, diagrams and graphics to PDF. Arrange images, set page size and DPI, and export one document with Pic2PDF.">
+  <link rel="canonical" href="https://pic2pdf.runtime-hub.com/png-to-pdf/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pic2PDF">
+  <meta property="og:title" content="PNG to PDF Converter – Screenshots &amp; Graphics | Pic2PDF">
+  <meta property="og:description" content="Convert PNG screenshots, diagrams and graphics to PDF. Arrange images, set page size and DPI, and export one document with Pic2PDF.">
+  <meta property="og:url" content="https://pic2pdf.runtime-hub.com/png-to-pdf/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PNG to PDF Converter – Screenshots &amp; Graphics | Pic2PDF">
+  <meta name="twitter:description" content="Convert PNG screenshots, diagrams and graphics to PDF. Arrange images, set page size and DPI, and export one document with Pic2PDF.">
+  <link rel="stylesheet" href="/style.css?v=20">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://pic2pdf.runtime-hub.com/png-to-pdf/#webpage",
+      "url": "https://pic2pdf.runtime-hub.com/png-to-pdf/",
+      "name": "PNG to PDF Converter – Screenshots & Graphics | Pic2PDF",
+      "description": "Convert PNG screenshots, diagrams and graphics to PDF. Arrange images, set page size and DPI, and export one document with Pic2PDF.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Pic2PDF",
+        "url": "https://pic2pdf.runtime-hub.com/"
+      },
+      "breadcrumb": {
+        "@id": "https://pic2pdf.runtime-hub.com/png-to-pdf/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://pic2pdf.runtime-hub.com/png-to-pdf/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Pic2PDF",
+          "item": "https://pic2pdf.runtime-hub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "PNG to PDF",
+          "item": "https://pic2pdf.runtime-hub.com/png-to-pdf/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script src="/site.js" defer></script>
+  <script src="/app.js?v=20" defer></script>
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-title" id="top">
+        <h1 id="hero-title">PNG to PDF.<br><span>Screenshots, in one file.</span></h1>
+        <p>Bring PNG screenshots, diagrams and graphics together in a tidy PDF with adjustable page size, orientation, margins and DPI.</p>
+        <div class="format-flow" aria-label="Supported image formats converted to PDF">
+          <span class="format-card">JPG</span>
+          <span class="format-card">JPEG</span>
+          <span class="format-card">PNG</span>
+          <span class="format-card">WEBP</span>
+          <span class="format-arrow" aria-hidden="true">→</span>
+          <span class="pdf-card">PDF</span>
+        </div>
+        <div class="format-caption">PNG IMAGES TO PDF</div>
+        <div class="moat-row" aria-label="Pic2PDF highlights">
+          <span class="moat-pill">Image-first workflow</span>
+          <span class="moat-pill">High-DPI output</span>
+          <span class="moat-pill">Clean one-file export</span>
+        </div>
+      </section>
+
+      <section class="tool-shell" id="tool" aria-label="Pic2PDF image to PDF studio">
+        <div class="tool-head">
+          <div class="tool-label"><span>Pic2PDF Studio</span></div>
+          <div class="tool-status" id="tool-status" aria-live="polite"></div>
+        </div>
+
+        <div class="state upload-state is-visible" id="state-upload">
+          <div class="upload-drop" id="dropzone" role="button" tabindex="0" aria-label="Upload images to Pic2PDF">
+            <div class="upload-core">
+              <div class="upload-shape" aria-hidden="true"></div>
+              <h2>Drop images here</h2>
+              <p>or upload them from your device to create one PDF.</p>
+              <button class="btn btn-primary" id="choose-btn" type="button">Upload images</button>
+              <div class="upload-hint">JPG · JPEG · PNG · WebP · up to 60 images</div>
+              <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple hidden>
+            </div>
+          </div>
+        </div>
+
+        <div class="state loading-state" id="state-loading" aria-live="polite">
+          <div class="swirl" aria-hidden="true"></div>
+          <h2>Preparing Pic2PDF…</h2>
+          <p>Mounting the local PDF engine in your browser.</p>
+        </div>
+
+        <div class="state studio-state" id="state-studio">
+          <div class="studio-grid">
+            <div class="preview-panel">
+              <div class="preview-stage">
+                <div class="page-preview" id="page-preview">
+                  <div class="preview-empty"><strong>PDF preview</strong><span>Your first image will appear here.</span></div>
+                </div>
+              </div>
+              <div class="preview-toolbar">
+                <button class="btn btn-quiet" id="prev-page" type="button" aria-label="Previous image">←</button>
+                <div class="preview-counter" id="preview-counter">1 / 1</div>
+                <button class="btn btn-quiet" id="next-page" type="button" aria-label="Next image">→</button>
+              </div>
+              <div class="thumbs" id="thumbs" aria-label="Image order"></div>
+            </div>
+
+            <aside class="settings-panel">
+              <div class="settings-title-row">
+                <div>
+                  <h2 class="settings-title">PDF settings</h2>
+                  <p class="settings-sub">Set the document before export.</p>
+                </div>
+                <button class="btn btn-quiet" id="add-more" type="button">+ Add</button>
+              </div>
+
+              <div class="setting">
+                <div class="setting-title">Page size</div>
+                <div class="segmented" id="page-size-options">
+                  <button class="choice is-selected" type="button" data-value="auto">Auto</button>
+                  <button class="choice" type="button" data-value="a4">A4</button>
+                  <button class="choice" type="button" data-value="a5">A5</button>
+                  <button class="choice" type="button" data-value="letter">Letter</button>
+                  <button class="choice" type="button" data-value="legal">Legal</button>
+                </div>
+              </div>
+
+              <div class="setting">
+                <div class="setting-title">Orientation</div>
+                <div class="segmented" id="orientation-options">
+                  <button class="choice is-selected" type="button" data-value="auto">Auto</button>
+                  <button class="choice" type="button" data-value="portrait">Portrait</button>
+                  <button class="choice" type="button" data-value="landscape">Landscape</button>
+                </div>
+              </div>
+
+              <div class="setting">
+                <div class="setting-title">DPI</div>
+                <div class="segmented five" id="dpi-options">
+                  <button class="choice" type="button" data-value="96">96</button>
+                  <button class="choice" type="button" data-value="150">150</button>
+                  <button class="choice is-selected" type="button" data-value="200">200</button>
+                  <button class="choice" type="button" data-value="300">300</button>
+                  <button class="choice" type="button" data-value="600">600</button>
+                </div>
+              </div>
+
+              <div class="setting">
+                <div class="setting-title">Margins</div>
+                <select class="select" id="margin-select" aria-label="PDF margins">
+                  <option value="0">None</option>
+                  <option value="18">Small</option>
+                  <option value="36">Medium</option>
+                </select>
+              </div>
+
+              <div class="settings-divider"></div>
+
+              <div class="setting">
+                <label for="output-name">Output filename</label>
+                <input class="text-input" id="output-name" value="pic2pdf.pdf" maxlength="80" spellcheck="false">
+              </div>
+
+              <div class="file-meta">
+                <span><strong id="image-count">0</strong> images</span>
+                <span id="image-size">0 B</span>
+              </div>
+
+              <div class="action-row">
+                <button class="btn btn-primary" id="create-pdf" type="button">Create PDF →</button>
+                <button class="btn btn-secondary" id="start-over" type="button">Start over</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="state processing-state" id="state-processing" aria-live="polite">
+          <div class="progress-ring" aria-hidden="true"></div>
+          <h2>Building your PDF…</h2>
+          <p id="processing-text">Keeping everything right here in your browser.</p>
+        </div>
+
+        <div class="state result-state" id="state-result" aria-live="polite">
+          <div class="success-mark" aria-hidden="true">✓</div>
+          <h2>Done. Your PDF is right here. :)</h2>
+          <p class="result-copy"><strong class="result-blue">No queues.</strong> <strong class="result-orange">No pipeline</strong> sending your private pictures somewhere. That’s why it takes <strong class="result-blue">split seconds.</strong> :)</p>
+          <div class="result-meta">
+            <span class="meta-pill" id="result-pages">0 pages</span>
+            <span class="meta-pill" id="result-size">0 KB</span>
+            <span class="meta-pill" id="result-dpi">200 DPI</span>
+          </div>
+          <div class="result-actions">
+            <a class="btn btn-primary result-download" id="download-link" href="#">Download PDF</a>
+            <button class="btn btn-secondary result-again" id="result-start-over" type="button">Do it again</button>
+          </div>
+          <div class="error-note" id="error-note" hidden></div>
+        </div>
+      </section>
+
+      <section class="share-strip" aria-labelledby="share-title">
+        <div class="share-copy">
+          <span class="share-kicker">Pass it on</span>
+          <h2 id="share-title">Share us with your friends or community.</h2>
+          <p>One quick link. No account, no setup.</p>
+        </div>
+        <div class="share-actions" aria-label="Share Pic2PDF">
+          <button class="share-action" type="button" data-share="x" aria-label="Share on X" title="Share on X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.964 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.16 17.52h1.833L6.4 4.126H4.433L17.084 19.77Z"/></svg>
+          </button>
+          <button class="share-action" type="button" data-share="whatsapp" aria-label="Share on WhatsApp" title="Share on WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.83 11.83 0 0 0 12.08 0C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13 1.59 5.93L.13 24l6.39-1.68a11.8 11.8 0 0 0 5.56 1.4h.01c6.53 0 11.84-5.31 11.84-11.84 0-3.17-1.23-6.15-3.41-8.4Zm-8.44 18.18h-.01a9.8 9.8 0 0 1-5-1.36l-.36-.21-3.79 1 1.01-3.69-.23-.38a9.82 9.82 0 1 1 8.38 4.64Zm5.39-7.35c-.29-.15-1.71-.85-1.98-.95-.26-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.14-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.76-1.43-1.71-1.6-2-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.16-.23-.56-.46-.49-.63-.5h-.54c-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43s1.05 2.82 1.19 3.02c.15.19 2.07 3.16 5.01 4.43.7.3 1.25.48 1.68.61.71.23 1.36.2 1.87.12.57-.08 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34Z"/></svg>
+          </button>
+          <button class="share-action" type="button" data-share="facebook" aria-label="Share on Facebook" title="Share on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-9h3l.45-3.5H13.5V7.26c0-1.01.28-1.69 1.73-1.69h1.85V2.44c-.32-.04-1.43-.14-2.7-.14-2.67 0-4.5 1.63-4.5 4.62V9.5H6.87V13h3.01v9h3.62Z"/></svg>
+          </button>
+          <button class="share-action" type="button" data-share="linkedin" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.05 8.47H1.56V21h3.49V8.47ZM3.3 3A2.03 2.03 0 1 0 3.3 7.06 2.03 2.03 0 0 0 3.3 3Zm8.27 5.47H8.23V21h3.35v-6.2c0-1.63.31-3.2 2.33-3.2 1.99 0 2.02 1.86 2.02 3.31V21h3.35v-6.74c0-3.31-.71-5.85-4.58-5.85-1.86 0-3.1 1.02-3.61 1.99h-.05V8.47h-.47Z"/></svg>
+          </button>
+          <button class="share-action" type="button" data-share="reddit" aria-label="Share on Reddit" title="Share on Reddit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.2 11.1c-.66 0-1.25.28-1.67.72a8.57 8.57 0 0 0-4.61-1.61l.94-4.4 3.06.65a1.6 1.6 0 1 0 .22-.94l-3.31-.7a.47.47 0 0 0-.55.36l-1.02 4.77a8.9 8.9 0 0 0-5.04 1.87 2.33 2.33 0 1 0-1.72 3.92c.03 0 .06 0 .09-.01A5.8 5.8 0 0 0 7 18.9a9.16 9.16 0 0 0 5 1.43c2.08 0 4.02-.56 5.46-1.49a5.87 5.87 0 0 0 1.7-1.57h.07a2.33 2.33 0 1 0 1.97-6.17ZM8.72 14.5c0-.67.54-1.21 1.21-1.21s1.21.54 1.21 1.21-.54 1.21-1.21 1.21-1.21-.54-1.21-1.21Zm6.06 2.92c-.65.62-1.57.94-2.78.94s-2.13-.32-2.78-.94a.45.45 0 1 1 .62-.65c.43.41 1.14.64 2.16.64s1.74-.23 2.16-.64a.45.45 0 1 1 .62.65Zm-.39-1.71c-.67 0-1.21-.54-1.21-1.21s.54-1.21 1.21-1.21 1.21.54 1.21 1.21-.54 1.21-1.21 1.21Z"/></svg>
+          </button>
+          <button class="share-action share-copy" type="button" data-share="copy" aria-label="Copy Pic2PDF link" title="Copy link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 7.5h7A3.5 3.5 0 0 1 20 11v.5a3.5 3.5 0 0 1-3.5 3.5h-3a.5.5 0 0 1 0-1h3a2.5 2.5 0 0 0 2.5-2.5V11A2.5 2.5 0 0 0 16.5 8.5h-7a2.5 2.5 0 0 0-2.5 2.5.5.5 0 0 1-1 0 3.5 3.5 0 0 1 3.5-3.5Z"/><path d="M14.5 16.5h-7A3.5 3.5 0 0 1 4 13v-.5A3.5 3.5 0 0 1 7.5 9h3a.5.5 0 1 1 0 1h-3A2.5 2.5 0 0 0 5 12.5v.5a2.5 2.5 0 0 0 2.5 2.5h7a2.5 2.5 0 0 0 2.5-2.5.5.5 0 1 1 1 0 3.5 3.5 0 0 1-3.5 3.5Z"/></svg>
+          </button>
+          <span class="share-status" id="share-status" role="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+            <section class="content-section" aria-labelledby="how-title">
+        <div class="section-kicker">PNG TO PDF IN THREE STEPS</div>
+        <h2 id="how-title">Make a PDF from your visual references</h2>
+        <p class="intro">Use the preview to check page order and layout before exporting screenshots, charts or graphic assets as a document.</p>
+        <div class="step-grid">
+          <article class="step"><span class="step-num">01</span><h3>Select PNG files</h3><p>Upload one PNG or a group of screenshots and graphics. Other supported image formats can be included too.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>Check the pages</h3><p>Review the preview, reorder thumbnails and decide whether the output should use Auto or a standard paper size.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>Export one PDF</h3><p>Set DPI and margins, create the PDF and download the document from the result state.</p></article>
+        </div>
+      </section>
+
+            <section class="content-section" aria-labelledby="why-title">
+        <div class="section-kicker">SCREENSHOTS &amp; GRAPHICS</div>
+        <h2 id="why-title">Convert PNG screenshots and graphics to PDF</h2>
+        <p class="intro">PNG is often used for screenshots, charts, interface captures, diagrams and graphics with crisp edges. Pic2PDF places each selected PNG on a PDF page, so a set of visual references can be reviewed, printed or shared as one document instead of many individual image files.</p>
+        <div class="feature-grid">
+          <article class="feature"><h3>Collect screenshots</h3><p>Combine several screen captures into a single document and drag them into the order that matches your notes, report or walkthrough.</p></article>
+          <article class="feature"><h3>White page background</h3><p>PDF pages are rendered on white. Transparent areas in a PNG therefore appear white in the exported document, which is predictable for printing and sharing.</p></article>
+          <article class="feature"><h3>Fit the document</h3><p>Choose Auto for image-shaped pages or select A4, A5, Letter or Legal. The preview helps you check the fit before creating the file.</p></article>
+          <article class="feature"><h3>Keep the batch together</h3><p>Add up to 60 supported images, including JPG, JPEG and WebP, when your project contains more than one image format.</p></article>
+        </div>
+      </section>
+
+            <section class="content-section" id="faq" aria-labelledby="faq-title">
+        <div class="section-kicker">FAQ</div>
+        <h2 id="faq-title">PNG to PDF questions</h2>
+        <div class="faq">
+          <details><summary>Does Pic2PDF accept PNG files with transparency?</summary><p>Yes. PNG files are accepted. The PDF page has a white background, so transparent areas appear white in the exported document.</p></details>
+          <details><summary>Can I convert many PNG screenshots at once?</summary><p>Yes. Select up to 60 supported images in a batch, then arrange their thumbnails before creating the PDF.</p></details>
+          <details><summary>Will text inside a screenshot become selectable?</summary><p>No. A screenshot remains an image on the PDF page; Pic2PDF does not run OCR or turn screenshot text into editable text.</p></details>
+          <details><summary>Can I mix PNG with JPG or WebP?</summary><p>Yes. PNG, JPG, JPEG and WebP can be added to the same project. Each selected image becomes a page in the exported PDF.</p></details>
+        </div>
+      </section>
+    
+    
+    <!-- PSEO_DISCOVERY_START -->
+      <section class="content-section pseo-discovery" id="image-pdf-pages" aria-labelledby="image-pdf-pages-title">
+        <div class="section-kicker">MORE IMAGE-TO-PDF WORKFLOWS</div>
+        <h2 id="image-pdf-pages-title">Same studio. Different starting points.</h2>
+        <p class="intro">All routes use the same Pic2PDF editor. Choose another guide if your next batch or document has a different focus.</p>
+        <div class="feature-grid pseo-nav-grid">
+          <a class="feature pseo-nav-card" href="https://pic2pdf.runtime-hub.com/">
+            <h3>All image formats</h3>
+            <p>Open the full image-to-PDF studio for JPG, JPEG, PNG and WebP.</p>
+          </a>
+          <a class="feature pseo-nav-card" href="https://pic2pdf.runtime-hub.com/jpg-to-pdf/">
+            <h3>JPG to PDF</h3>
+            <p>Turn JPG and JPEG photos into one ordered document.</p>
+          </a>
+          <a class="feature pseo-nav-card" href="https://pic2pdf.runtime-hub.com/webp-to-pdf/">
+            <h3>WebP to PDF</h3>
+            <p>Turn web images into a conventional PDF document.</p>
+          </a>
+          <a class="feature pseo-nav-card" href="https://pic2pdf.runtime-hub.com/multiple-images-to-pdf/">
+            <h3>Multiple Images to PDF</h3>
+            <p>Combine up to 60 pictures into one ordered PDF.</p>
+          </a>
+          <a class="feature pseo-nav-card" href="https://pic2pdf.runtime-hub.com/high-quality-image-to-pdf/">
+            <h3>Image PDF &amp; DPI</h3>
+            <p>Understand DPI, physical page size and source resolution.</p>
+          </a>
+        </div>
+      </section>
+    <!-- PSEO_DISCOVERY_END -->
+    </div>
+  </main>
+</body>
+</html>

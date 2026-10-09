@@ -1,0 +1,4 @@
+# Local pSEO generator files — pages are already generated and deployable
+/build-seo.py
+/seo-pages.json
+/README-PSEO.txt
