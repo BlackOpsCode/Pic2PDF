@@ -1,0 +1,20 @@
+# Pic2PDF
+
+> Pic2PDF is a browser-based image-to-PDF tool for converting JPG, JPEG, PNG, and WebP images into PDF documents. Users can arrange images, choose page sizes and DPI settings, and download the resulting PDF.
+
+Pic2PDF focuses on a simple, image-first conversion workflow with live previews, image ordering, and configurable PDF output.
+
+## Main tool
+
+- [Image to PDF Converter](https://pic2pdf.runtime-hub.com/): Convert supported images into a PDF document.
+- [JPG to PDF](https://pic2pdf.runtime-hub.com/jpg-to-pdf/): Convert JPG and JPEG photographs into PDF.
+- [PNG to PDF](https://pic2pdf.runtime-hub.com/png-to-pdf/): Convert PNG images, screenshots, and graphics into PDF.
+- [WebP to PDF](https://pic2pdf.runtime-hub.com/webp-to-pdf/): Convert WebP images into PDF documents.
+- [Multiple Images to PDF](https://pic2pdf.runtime-hub.com/multiple-images-to-pdf/): Combine multiple images into one PDF.
+- [High-Quality Image to PDF](https://pic2pdf.runtime-hub.com/high-quality-image-to-pdf/): Learn about DPI, image resolution, and PDF print sizing.
+
+## About and policies
+
+- [About Pic2PDF](https://pic2pdf.runtime-hub.com/about.html): Product information and image-to-PDF guidance.
+- [Privacy Policy](https://pic2pdf.runtime-hub.com/privacy.html): Privacy information.
+- [Terms of Use](https://pic2pdf.runtime-hub.com/terms.html): Terms governing use of the tool.
